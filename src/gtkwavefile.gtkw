@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Feb  9 19:20:02 2025
+[*]
+[dumpfile] "/home/ipa/alu_waveform.vcd"
+[dumpfile_mtime] "Sun Feb  9 19:16:45 2025"
+[dumpfile_size] 642841
+[savefile] "/home/ipa/src/gtkwavefile.gtkw"
+[timestart] 269700
+[size] 1908 1047
+[pos] -802 -270
+*-14.535441 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 214
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@22
+alu_tb.A[63:0]
+@420
+alu_tb.B[63:0]
+alu_tb.result[63:0]
+@29
+alu_tb.alu_op[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

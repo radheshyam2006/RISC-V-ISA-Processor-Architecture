@@ -1,0 +1,3546 @@
+$date
+	Sun Feb  9 23:15:36 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_shift_operations $end
+$var wire 64 ! SRL_result [63:0] $end
+$var wire 64 " SRA_result [63:0] $end
+$var wire 64 # SLL_result [63:0] $end
+$var reg 64 $ A [63:0] $end
+$var reg 6 % shift_amount [5:0] $end
+$scope module sll_inst $end
+$var wire 64 & result [63:0] $end
+$var wire 64 ' rs1 [63:0] $end
+$var wire 6 ( rs2 [5:0] $end
+$var wire 64 ) mux6_output [63:0] $end
+$var wire 64 * mux5_output [63:0] $end
+$var wire 64 + mux4_output [63:0] $end
+$var wire 64 , mux3_output [63:0] $end
+$var wire 64 - mux2_output [63:0] $end
+$var wire 64 . mux1_output [63:0] $end
+$scope module mux1 $end
+$var wire 64 / in0 [63:0] $end
+$var wire 64 0 in1 [63:0] $end
+$var wire 1 1 not_sel $end
+$var wire 1 2 sel $end
+$var wire 64 3 sel_and_in1 [63:0] $end
+$var wire 64 4 out [63:0] $end
+$var wire 64 5 not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux2 $end
+$var wire 64 6 in0 [63:0] $end
+$var wire 64 7 in1 [63:0] $end
+$var wire 1 8 not_sel $end
+$var wire 1 9 sel $end
+$var wire 64 : sel_and_in1 [63:0] $end
+$var wire 64 ; out [63:0] $end
+$var wire 64 < not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux3 $end
+$var wire 64 = in0 [63:0] $end
+$var wire 64 > in1 [63:0] $end
+$var wire 1 ? not_sel $end
+$var wire 1 @ sel $end
+$var wire 64 A sel_and_in1 [63:0] $end
+$var wire 64 B out [63:0] $end
+$var wire 64 C not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux4 $end
+$var wire 64 D in0 [63:0] $end
+$var wire 64 E in1 [63:0] $end
+$var wire 1 F not_sel $end
+$var wire 1 G sel $end
+$var wire 64 H sel_and_in1 [63:0] $end
+$var wire 64 I out [63:0] $end
+$var wire 64 J not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux5 $end
+$var wire 64 K in0 [63:0] $end
+$var wire 64 L in1 [63:0] $end
+$var wire 1 M not_sel $end
+$var wire 1 N sel $end
+$var wire 64 O sel_and_in1 [63:0] $end
+$var wire 64 P out [63:0] $end
+$var wire 64 Q not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux6 $end
+$var wire 64 R in0 [63:0] $end
+$var wire 64 S in1 [63:0] $end
+$var wire 1 T not_sel $end
+$var wire 1 U sel $end
+$var wire 64 V sel_and_in1 [63:0] $end
+$var wire 64 W out [63:0] $end
+$var wire 64 X not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module sra_inst $end
+$var wire 64 Y result [63:0] $end
+$var wire 64 Z rs1 [63:0] $end
+$var wire 6 [ rs2 [5:0] $end
+$var wire 1 \ sign $end
+$var wire 64 ] mux6_output [63:0] $end
+$var wire 64 ^ mux5_output [63:0] $end
+$var wire 64 _ mux4_output [63:0] $end
+$var wire 64 ` mux3_output [63:0] $end
+$var wire 64 a mux2_output [63:0] $end
+$var wire 64 b mux1_output [63:0] $end
+$scope module mux1 $end
+$var wire 64 c in0 [63:0] $end
+$var wire 64 d in1 [63:0] $end
+$var wire 1 e not_sel $end
+$var wire 1 f sel $end
+$var wire 64 g sel_and_in1 [63:0] $end
+$var wire 64 h out [63:0] $end
+$var wire 64 i not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux2 $end
+$var wire 64 j in0 [63:0] $end
+$var wire 64 k in1 [63:0] $end
+$var wire 1 l not_sel $end
+$var wire 1 m sel $end
+$var wire 64 n sel_and_in1 [63:0] $end
+$var wire 64 o out [63:0] $end
+$var wire 64 p not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux3 $end
+$var wire 64 q in0 [63:0] $end
+$var wire 64 r in1 [63:0] $end
+$var wire 1 s not_sel $end
+$var wire 1 t sel $end
+$var wire 64 u sel_and_in1 [63:0] $end
+$var wire 64 v out [63:0] $end
+$var wire 64 w not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux4 $end
+$var wire 64 x in0 [63:0] $end
+$var wire 64 y in1 [63:0] $end
+$var wire 1 z not_sel $end
+$var wire 1 { sel $end
+$var wire 64 | sel_and_in1 [63:0] $end
+$var wire 64 } out [63:0] $end
+$var wire 64 ~ not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux5 $end
+$var wire 64 !" in0 [63:0] $end
+$var wire 64 "" in1 [63:0] $end
+$var wire 1 #" not_sel $end
+$var wire 1 $" sel $end
+$var wire 64 %" sel_and_in1 [63:0] $end
+$var wire 64 &" out [63:0] $end
+$var wire 64 '" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux6 $end
+$var wire 64 (" in0 [63:0] $end
+$var wire 64 )" in1 [63:0] $end
+$var wire 1 *" not_sel $end
+$var wire 1 +" sel $end
+$var wire 64 ," sel_and_in1 [63:0] $end
+$var wire 64 -" out [63:0] $end
+$var wire 64 ." not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module srl_inst $end
+$var wire 64 /" result [63:0] $end
+$var wire 64 0" rs1 [63:0] $end
+$var wire 6 1" rs2 [5:0] $end
+$var wire 64 2" mux6_output [63:0] $end
+$var wire 64 3" mux5_output [63:0] $end
+$var wire 64 4" mux4_output [63:0] $end
+$var wire 64 5" mux3_output [63:0] $end
+$var wire 64 6" mux2_output [63:0] $end
+$var wire 64 7" mux1_output [63:0] $end
+$scope module mux1 $end
+$var wire 64 8" in0 [63:0] $end
+$var wire 64 9" in1 [63:0] $end
+$var wire 1 :" not_sel $end
+$var wire 1 ;" sel $end
+$var wire 64 <" sel_and_in1 [63:0] $end
+$var wire 64 =" out [63:0] $end
+$var wire 64 >" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux2 $end
+$var wire 64 ?" in0 [63:0] $end
+$var wire 64 @" in1 [63:0] $end
+$var wire 1 A" not_sel $end
+$var wire 1 B" sel $end
+$var wire 64 C" sel_and_in1 [63:0] $end
+$var wire 64 D" out [63:0] $end
+$var wire 64 E" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux3 $end
+$var wire 64 F" in0 [63:0] $end
+$var wire 64 G" in1 [63:0] $end
+$var wire 1 H" not_sel $end
+$var wire 1 I" sel $end
+$var wire 64 J" sel_and_in1 [63:0] $end
+$var wire 64 K" out [63:0] $end
+$var wire 64 L" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux4 $end
+$var wire 64 M" in0 [63:0] $end
+$var wire 64 N" in1 [63:0] $end
+$var wire 1 O" not_sel $end
+$var wire 1 P" sel $end
+$var wire 64 Q" sel_and_in1 [63:0] $end
+$var wire 64 R" out [63:0] $end
+$var wire 64 S" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux5 $end
+$var wire 64 T" in0 [63:0] $end
+$var wire 64 U" in1 [63:0] $end
+$var wire 1 V" not_sel $end
+$var wire 1 W" sel $end
+$var wire 64 X" sel_and_in1 [63:0] $end
+$var wire 64 Y" out [63:0] $end
+$var wire 64 Z" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$scope module mux6 $end
+$var wire 64 [" in0 [63:0] $end
+$var wire 64 \" in1 [63:0] $end
+$var wire 1 ]" not_sel $end
+$var wire 1 ^" sel $end
+$var wire 64 _" sel_and_in1 [63:0] $end
+$var wire 64 `" out [63:0] $end
+$var wire 64 a" not_sel_and_in0 [63:0] $end
+$scope begin mux_logic[0] $end
+$upscope $end
+$scope begin mux_logic[1] $end
+$upscope $end
+$scope begin mux_logic[2] $end
+$upscope $end
+$scope begin mux_logic[3] $end
+$upscope $end
+$scope begin mux_logic[4] $end
+$upscope $end
+$scope begin mux_logic[5] $end
+$upscope $end
+$scope begin mux_logic[6] $end
+$upscope $end
+$scope begin mux_logic[7] $end
+$upscope $end
+$scope begin mux_logic[8] $end
+$upscope $end
+$scope begin mux_logic[9] $end
+$upscope $end
+$scope begin mux_logic[10] $end
+$upscope $end
+$scope begin mux_logic[11] $end
+$upscope $end
+$scope begin mux_logic[12] $end
+$upscope $end
+$scope begin mux_logic[13] $end
+$upscope $end
+$scope begin mux_logic[14] $end
+$upscope $end
+$scope begin mux_logic[15] $end
+$upscope $end
+$scope begin mux_logic[16] $end
+$upscope $end
+$scope begin mux_logic[17] $end
+$upscope $end
+$scope begin mux_logic[18] $end
+$upscope $end
+$scope begin mux_logic[19] $end
+$upscope $end
+$scope begin mux_logic[20] $end
+$upscope $end
+$scope begin mux_logic[21] $end
+$upscope $end
+$scope begin mux_logic[22] $end
+$upscope $end
+$scope begin mux_logic[23] $end
+$upscope $end
+$scope begin mux_logic[24] $end
+$upscope $end
+$scope begin mux_logic[25] $end
+$upscope $end
+$scope begin mux_logic[26] $end
+$upscope $end
+$scope begin mux_logic[27] $end
+$upscope $end
+$scope begin mux_logic[28] $end
+$upscope $end
+$scope begin mux_logic[29] $end
+$upscope $end
+$scope begin mux_logic[30] $end
+$upscope $end
+$scope begin mux_logic[31] $end
+$upscope $end
+$scope begin mux_logic[32] $end
+$upscope $end
+$scope begin mux_logic[33] $end
+$upscope $end
+$scope begin mux_logic[34] $end
+$upscope $end
+$scope begin mux_logic[35] $end
+$upscope $end
+$scope begin mux_logic[36] $end
+$upscope $end
+$scope begin mux_logic[37] $end
+$upscope $end
+$scope begin mux_logic[38] $end
+$upscope $end
+$scope begin mux_logic[39] $end
+$upscope $end
+$scope begin mux_logic[40] $end
+$upscope $end
+$scope begin mux_logic[41] $end
+$upscope $end
+$scope begin mux_logic[42] $end
+$upscope $end
+$scope begin mux_logic[43] $end
+$upscope $end
+$scope begin mux_logic[44] $end
+$upscope $end
+$scope begin mux_logic[45] $end
+$upscope $end
+$scope begin mux_logic[46] $end
+$upscope $end
+$scope begin mux_logic[47] $end
+$upscope $end
+$scope begin mux_logic[48] $end
+$upscope $end
+$scope begin mux_logic[49] $end
+$upscope $end
+$scope begin mux_logic[50] $end
+$upscope $end
+$scope begin mux_logic[51] $end
+$upscope $end
+$scope begin mux_logic[52] $end
+$upscope $end
+$scope begin mux_logic[53] $end
+$upscope $end
+$scope begin mux_logic[54] $end
+$upscope $end
+$scope begin mux_logic[55] $end
+$upscope $end
+$scope begin mux_logic[56] $end
+$upscope $end
+$scope begin mux_logic[57] $end
+$upscope $end
+$scope begin mux_logic[58] $end
+$upscope $end
+$scope begin mux_logic[59] $end
+$upscope $end
+$scope begin mux_logic[60] $end
+$upscope $end
+$scope begin mux_logic[61] $end
+$upscope $end
+$scope begin mux_logic[62] $end
+$upscope $end
+$scope begin mux_logic[63] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 a"
+b0 `"
+b0 _"
+1^"
+0]"
+b0 \"
+b1 ["
+b1 Z"
+b1 Y"
+b0 X"
+0W"
+1V"
+b0 U"
+b1 T"
+b1 S"
+b1 R"
+b0 Q"
+0P"
+1O"
+b0 N"
+b1 M"
+b1 L"
+b1 K"
+b0 J"
+0I"
+1H"
+b0 G"
+b1 F"
+b1 E"
+b1 D"
+b0 C"
+0B"
+1A"
+b0 @"
+b1 ?"
+b1 >"
+b1 ="
+b0 <"
+0;"
+1:"
+b0 9"
+b1 8"
+b1 7"
+b1 6"
+b1 5"
+b1 4"
+b1 3"
+b0 2"
+b1 1"
+b1 0"
+b0 /"
+b0 ."
+b0 -"
+b0 ,"
+1+"
+0*"
+b0 )"
+b1 ("
+b1 '"
+b1 &"
+b0 %"
+0$"
+1#"
+b0 ""
+b1 !"
+b1 ~
+b1 }
+b0 |
+0{
+1z
+b0 y
+b1 x
+b1 w
+b1 v
+b0 u
+0t
+1s
+b0 r
+b1 q
+b1 p
+b1 o
+b0 n
+0m
+1l
+b0 k
+b1 j
+b1 i
+b1 h
+b0 g
+0f
+1e
+b0 d
+b1 c
+b1 b
+b1 a
+b1 `
+b1 _
+b1 ^
+b0 ]
+0\
+b1 [
+b1 Z
+b0 Y
+b0 X
+b10 W
+b10 V
+1U
+0T
+b10 S
+b1 R
+b1 Q
+b1 P
+b0 O
+0N
+1M
+b100 L
+b1 K
+b1 J
+b1 I
+b0 H
+0G
+1F
+b10000 E
+b1 D
+b1 C
+b1 B
+b0 A
+0@
+1?
+b100000000 >
+b1 =
+b1 <
+b1 ;
+b0 :
+09
+18
+b10000000000000000 7
+b1 6
+b1 5
+b1 4
+b0 3
+02
+11
+b100000000000000000000000000000000 0
+b1 /
+b1 .
+b1 -
+b1 ,
+b1 +
+b1 *
+b10 )
+b1 (
+b1 '
+b10 &
+b1 %
+b1 $
+b10 #
+b0 "
+b0 !
+$end
+#10
+b100000 S
+b0 ^
+b0 &"
+b0 ("
+b0 3"
+b0 Y"
+b0 ["
+b10000 *
+b10000 P
+b10000 R
+b0 '"
+b0 Z"
+b10000 Q
+b1000000 L
+b0 _
+b0 }
+b0 !"
+b0 "
+b0 Y
+b0 ]
+b0 -"
+b0 4"
+b0 R"
+b0 T"
+b0 !
+b0 /"
+b0 2"
+b0 `"
+b10000 +
+b10000 I
+b10000 K
+b10000 #
+b10000 &
+b10000 )
+b10000 W
+b0 J
+b10000 X
+b0 ~
+b0 ."
+b0 S"
+b0 a"
+0F
+b10000 H
+1T
+b0 V
+0z
+1*"
+0O"
+1]"
+1G
+0U
+1{
+0+"
+1P"
+0^"
+b100 %
+b100 (
+b100 [
+b100 1"
+#20
+b11111111111111111111111111111111111111111111111111111111111111 !
+b11111111111111111111111111111111111111111111111111111111111111 /"
+b11111111111111111111111111111111111111111111111111111111111111 2"
+b11111111111111111111111111111111111111111111111111111111111111 `"
+b11111111111111111111111111111111111111111111111111111111111111 a"
+b1111111111111111111111111111111111111111111111111111111111111 \"
+b11111111111111111111111111111111111111111111111111111111111111 3"
+b11111111111111111111111111111111111111111111111111111111111111 Y"
+b11111111111111111111111111111111111111111111111111111111111111 ["
+b11111111111111111111111111111111111111111111111111111111111111 X"
+b11111111111111111111111111111111111111111111111111111111111111 U"
+b1111111111111111111111111111111111111111111111111111111111110000 E
+b111111111111111111111111111111111111111111111111111111111111 N"
+b1111111111111111111111111111111111111111111111111111111111111111 ,
+b1111111111111111111111111111111111111111111111111111111111111111 B
+b1111111111111111111111111111111111111111111111111111111111111111 D
+b1111111111111111111111111111111111111111111111111111111111111111 `
+b1111111111111111111111111111111111111111111111111111111111111111 v
+b1111111111111111111111111111111111111111111111111111111111111111 x
+b1111111111111111111111111111111111111111111111111111111111111111 5"
+b1111111111111111111111111111111111111111111111111111111111111111 K"
+b1111111111111111111111111111111111111111111111111111111111111111 M"
+b1111111111111111111111111111111111111111111111111111111111111111 C
+b1111111111111111111111111111111111111111111111111111111111111111 w
+b1111111111111111111111111111111111111111111111111111111111111111 L"
+b1111111111111111111111111111111111111111111111111111111100000000 >
+b11111111111111111111111111111111111111111111111111111111 G"
+b1111111111111111111111111111111111111111111111111111111111111100 #
+b1111111111111111111111111111111111111111111111111111111111111100 &
+b1111111111111111111111111111111111111111111111111111111111111100 )
+b1111111111111111111111111111111111111111111111111111111111111100 W
+b1111111111111111111111111111111111111111111111111111111111111111 "
+b1111111111111111111111111111111111111111111111111111111111111111 Y
+b1111111111111111111111111111111111111111111111111111111111111111 ]
+b1111111111111111111111111111111111111111111111111111111111111111 -"
+b1111111111111111111111111111111111111111111111111111111111111111 -
+b1111111111111111111111111111111111111111111111111111111111111111 ;
+b1111111111111111111111111111111111111111111111111111111111111111 =
+b1111111111111111111111111111111111111111111111111111111111111111 a
+b1111111111111111111111111111111111111111111111111111111111111111 o
+b1111111111111111111111111111111111111111111111111111111111111111 q
+b1111111111111111111111111111111111111111111111111111111111111111 6"
+b1111111111111111111111111111111111111111111111111111111111111111 D"
+b1111111111111111111111111111111111111111111111111111111111111111 F"
+b1111111111111111111111111111111111111111111111111111111111111100 X
+b1111111111111111111111111111111111111111111111111111111111111111 ."
+b1111111111111111111111111111111111111111111111111111111111111111 <
+b1111111111111111111111111111111111111111111111111111111111111111 p
+b1111111111111111111111111111111111111111111111111111111111111111 E"
+b1111111111111111111111111111111111111111111111111111111111111100 L
+b1111111111111111111111111111111111111111111111111111111111111000 S
+b1111111111111111111111111111111111111111111111111111111111111111 _
+b1111111111111111111111111111111111111111111111111111111111111111 }
+b1111111111111111111111111111111111111111111111111111111111111111 !"
+b1111111111111111111111111111111111111111111111111111111111111111 4"
+b1111111111111111111111111111111111111111111111111111111111111111 R"
+b1111111111111111111111111111111111111111111111111111111111111111 T"
+b1111111111111111111111111111111111111111111111110000000000000000 7
+b111111111111111111111111111111111111111111111111 @"
+b1111111111111111111111111111111111111111111111111111111111111111 +
+b1111111111111111111111111111111111111111111111111111111111111111 I
+b1111111111111111111111111111111111111111111111111111111111111111 K
+b1111111111111111111111111111111111111111111111111111111111111100 *
+b1111111111111111111111111111111111111111111111111111111111111100 P
+b1111111111111111111111111111111111111111111111111111111111111100 R
+b1111111111111111111111111111111111111111111111111111111111111111 ^
+b1111111111111111111111111111111111111111111111111111111111111111 &"
+b1111111111111111111111111111111111111111111111111111111111111111 ("
+b1111111111111111111111111111111111111111111111111111111111111111 .
+b1111111111111111111111111111111111111111111111111111111111111111 4
+b1111111111111111111111111111111111111111111111111111111111111111 6
+b1111111111111111111111111111111111111111111111111111111111111111 b
+b1111111111111111111111111111111111111111111111111111111111111111 h
+b1111111111111111111111111111111111111111111111111111111111111111 j
+b1111111111111111111111111111111111111111111111111111111111111111 7"
+b1111111111111111111111111111111111111111111111111111111111111111 ="
+b1111111111111111111111111111111111111111111111111111111111111111 ?"
+b1111111111111111111111111111111111111111111111111111111111111111 J
+b0 Q
+b1111111111111111111111111111111111111111111111111111111111111111 ~
+b1111111111111111111111111111111111111111111111111111111111111111 S"
+1F
+b0 H
+0M
+b1111111111111111111111111111111111111111111111111111111111111100 O
+1z
+0#"
+b1111111111111111111111111111111111111111111111111111111111111111 %"
+1O"
+0V"
+b1111111111111111111111111111111111111111111111111111111111111111 5
+b1111111111111111111111111111111111111111111111111111111111111111 i
+b1111111111111111111111111111111111111111111111111111111111111111 >"
+0G
+1N
+0{
+1$"
+0P"
+1W"
+b1111111111111111111111111111111100000000000000000000000000000000 0
+b1111111111111111111111111111111111111111111111111111111111111111 k
+b1111111111111111111111111111111111111111111111111111111111111111 r
+b1111111111111111111111111111111111111111111111111111111111111111 y
+b1111111111111111111111111111111111111111111111111111111111111111 ""
+b1111111111111111111111111111111111111111111111111111111111111111 )"
+1\
+b1111111111111111111111111111111111111111111111111111111111111111 d
+b11111111111111111111111111111111 9"
+b10 %
+b10 (
+b10 [
+b10 1"
+b1111111111111111111111111111111111111111111111111111111111111111 $
+b1111111111111111111111111111111111111111111111111111111111111111 '
+b1111111111111111111111111111111111111111111111111111111111111111 /
+b1111111111111111111111111111111111111111111111111111111111111111 Z
+b1111111111111111111111111111111111111111111111111111111111111111 c
+b1111111111111111111111111111111111111111111111111111111111111111 0"
+b1111111111111111111111111111111111111111111111111111111111111111 8"
+#30
+b0 L
+b1110000000000000000000000000000000000000000000000000000000000000 ""
+b10000000000000000000000000000000000000000000000000000000000000 U"
+b1000000000000000000000000000000000000000000000000000000000000000 +
+b1000000000000000000000000000000000000000000000000000000000000000 I
+b1000000000000000000000000000000000000000000000000000000000000000 K
+b1000000000000000000000000000000000000000000000000000000000000000 _
+b1000000000000000000000000000000000000000000000000000000000000000 }
+b1000000000000000000000000000000000000000000000000000000000000000 !"
+b1000000000000000000000000000000000000000000000000000000000000000 4"
+b1000000000000000000000000000000000000000000000000000000000000000 R"
+b1000000000000000000000000000000000000000000000000000000000000000 T"
+b1000000000000000000000000000000000000000000000000000000000000000 J
+b1000000000000000000000000000000000000000000000000000000000000000 ~
+b1000000000000000000000000000000000000000000000000000000000000000 S"
+b0 E
+b1111100000000000000000000000000000000000000000000000000000000000 y
+b100000000000000000000000000000000000000000000000000000000000 N"
+b1000000000000000000000000000000000000000000000000000000000000000 ,
+b1000000000000000000000000000000000000000000000000000000000000000 B
+b1000000000000000000000000000000000000000000000000000000000000000 D
+b1000000000000000000000000000000000000000000000000000000000000000 `
+b1000000000000000000000000000000000000000000000000000000000000000 v
+b1000000000000000000000000000000000000000000000000000000000000000 x
+b1000000000000000000000000000000000000000000000000000000000000000 5"
+b1000000000000000000000000000000000000000000000000000000000000000 K"
+b1000000000000000000000000000000000000000000000000000000000000000 M"
+b1000000000000000000000000000000000000000000000000000000000000000 C
+b1000000000000000000000000000000000000000000000000000000000000000 w
+b1000000000000000000000000000000000000000000000000000000000000000 L"
+b1100000000000000000000000000000000000000000000000000000000000000 "
+b1100000000000000000000000000000000000000000000000000000000000000 Y
+b1100000000000000000000000000000000000000000000000000000000000000 ]
+b1100000000000000000000000000000000000000000000000000000000000000 -"
+b0 >
+b1111111110000000000000000000000000000000000000000000000000000000 r
+b10000000000000000000000000000000000000000000000000000000 G"
+b1000000000000000000000000000000000000000000000000000000000000000 -
+b1000000000000000000000000000000000000000000000000000000000000000 ;
+b1000000000000000000000000000000000000000000000000000000000000000 =
+b1000000000000000000000000000000000000000000000000000000000000000 a
+b1000000000000000000000000000000000000000000000000000000000000000 o
+b1000000000000000000000000000000000000000000000000000000000000000 q
+b1000000000000000000000000000000000000000000000000000000000000000 6"
+b1000000000000000000000000000000000000000000000000000000000000000 D"
+b1000000000000000000000000000000000000000000000000000000000000000 F"
+b1000000000000000000000000000000000000000000000000000000000000000 <
+b1000000000000000000000000000000000000000000000000000000000000000 p
+b1000000000000000000000000000000000000000000000000000000000000000 E"
+b0 S
+b0 #
+b0 &
+b0 )
+b0 W
+b1100000000000000000000000000000000000000000000000000000000000000 )"
+b100000000000000000000000000000000000000000000000000000000000000 \"
+b100000000000000000000000000000000000000000000000000000000000000 !
+b100000000000000000000000000000000000000000000000000000000000000 /"
+b100000000000000000000000000000000000000000000000000000000000000 2"
+b100000000000000000000000000000000000000000000000000000000000000 `"
+b0 7
+b1111111111111111100000000000000000000000000000000000000000000000 k
+b100000000000000000000000000000000000000000000000 @"
+b1000000000000000000000000000000000000000000000000000000000000000 *
+b1000000000000000000000000000000000000000000000000000000000000000 P
+b1000000000000000000000000000000000000000000000000000000000000000 R
+b1000000000000000000000000000000000000000000000000000000000000000 ^
+b1000000000000000000000000000000000000000000000000000000000000000 &"
+b1000000000000000000000000000000000000000000000000000000000000000 ("
+b1000000000000000000000000000000000000000000000000000000000000000 3"
+b1000000000000000000000000000000000000000000000000000000000000000 Y"
+b1000000000000000000000000000000000000000000000000000000000000000 ["
+b1000000000000000000000000000000000000000000000000000000000000000 .
+b1000000000000000000000000000000000000000000000000000000000000000 4
+b1000000000000000000000000000000000000000000000000000000000000000 6
+b1000000000000000000000000000000000000000000000000000000000000000 b
+b1000000000000000000000000000000000000000000000000000000000000000 h
+b1000000000000000000000000000000000000000000000000000000000000000 j
+b1000000000000000000000000000000000000000000000000000000000000000 7"
+b1000000000000000000000000000000000000000000000000000000000000000 ="
+b1000000000000000000000000000000000000000000000000000000000000000 ?"
+b1000000000000000000000000000000000000000000000000000000000000000 Q
+b0 X
+b1000000000000000000000000000000000000000000000000000000000000000 '"
+b0 ."
+b1000000000000000000000000000000000000000000000000000000000000000 Z"
+b0 a"
+1M
+b0 O
+0T
+b0 V
+1#"
+b0 %"
+0*"
+b1100000000000000000000000000000000000000000000000000000000000000 ,"
+1V"
+b0 X"
+0]"
+b100000000000000000000000000000000000000000000000000000000000000 _"
+b1000000000000000000000000000000000000000000000000000000000000000 5
+b1000000000000000000000000000000000000000000000000000000000000000 i
+b1000000000000000000000000000000000000000000000000000000000000000 >"
+0N
+1U
+0$"
+1+"
+0W"
+1^"
+b0 0
+b1111111111111111111111111111111110000000000000000000000000000000 d
+b10000000000000000000000000000000 9"
+b1 %
+b1 (
+b1 [
+b1 1"
+b1000000000000000000000000000000000000000000000000000000000000000 $
+b1000000000000000000000000000000000000000000000000000000000000000 '
+b1000000000000000000000000000000000000000000000000000000000000000 /
+b1000000000000000000000000000000000000000000000000000000000000000 Z
+b1000000000000000000000000000000000000000000000000000000000000000 c
+b1000000000000000000000000000000000000000000000000000000000000000 0"
+b1000000000000000000000000000000000000000000000000000000000000000 8"
+#40
+b0 *
+b0 P
+b0 R
+b1111110000000000000000000000000000000000000000000000000000000000 )"
+b10000000000000000000000000000000000000000000000000000000000 \"
+b1111100000000000000000000000000000000000000000000000000000000000 ^
+b1111100000000000000000000000000000000000000000000000000000000000 &"
+b1111100000000000000000000000000000000000000000000000000000000000 ("
+b100000000000000000000000000000000000000000000000000000000000 3"
+b100000000000000000000000000000000000000000000000000000000000 Y"
+b100000000000000000000000000000000000000000000000000000000000 ["
+b0 Q
+b1111100000000000000000000000000000000000000000000000000000000000 '"
+b100000000000000000000000000000000000000000000000000000000000 Z"
+b0 +
+b0 I
+b0 K
+b0 #
+b0 &
+b0 )
+b0 W
+b1111111000000000000000000000000000000000000000000000000000000000 ""
+b1000000000000000000000000000000000000000000000000000000000 U"
+b1111100000000000000000000000000000000000000000000000000000000000 _
+b1111100000000000000000000000000000000000000000000000000000000000 }
+b1111100000000000000000000000000000000000000000000000000000000000 !"
+b1111100000000000000000000000000000000000000000000000000000000000 "
+b1111100000000000000000000000000000000000000000000000000000000000 Y
+b1111100000000000000000000000000000000000000000000000000000000000 ]
+b1111100000000000000000000000000000000000000000000000000000000000 -"
+b100000000000000000000000000000000000000000000000000000000000 4"
+b100000000000000000000000000000000000000000000000000000000000 R"
+b100000000000000000000000000000000000000000000000000000000000 T"
+b100000000000000000000000000000000000000000000000000000000000 !
+b100000000000000000000000000000000000000000000000000000000000 /"
+b100000000000000000000000000000000000000000000000000000000000 2"
+b100000000000000000000000000000000000000000000000000000000000 `"
+b0 J
+b0 X
+b0 ~
+b1111100000000000000000000000000000000000000000000000000000000000 ."
+b0 S"
+b100000000000000000000000000000000000000000000000000000000000 a"
+0F
+1T
+0z
+b1111100000000000000000000000000000000000000000000000000000000000 |
+1*"
+b0 ,"
+0O"
+b100000000000000000000000000000000000000000000000000000000000 Q"
+1]"
+b0 _"
+1G
+0U
+1{
+0+"
+1P"
+0^"
+b100 %
+b100 (
+b100 [
+b100 1"
+#50
+b1111111111111111111111111111111111111111111111111111111111111100 #
+b1111111111111111111111111111111111111111111111111111111111111100 &
+b1111111111111111111111111111111111111111111111111111111111111100 )
+b1111111111111111111111111111111111111111111111111111111111111100 W
+b1111111111111111111111111111111111111111111111111111111111111100 X
+b1111111111111111111111111111111111111111111111111111111111111000 S
+b1111111111111111111111111111111111111111111111111111111111111100 *
+b1111111111111111111111111111111111111111111111111111111111111100 P
+b1111111111111111111111111111111111111111111111111111111111111100 R
+b1111111111111111111111111111111111111111111111111111111111111100 O
+b1111111111111111111111111111111111111111111111111111111111111100 L
+b1111111111111111111111111111111111111111111111111111111111110000 E
+b11111111111111111111111111111111111111111111111111111111111 N"
+b111111111111111111111111111111111111111111111111111111111111111 ,
+b111111111111111111111111111111111111111111111111111111111111111 B
+b111111111111111111111111111111111111111111111111111111111111111 D
+b111111111111111111111111111111111111111111111111111111111111111 `
+b111111111111111111111111111111111111111111111111111111111111111 v
+b111111111111111111111111111111111111111111111111111111111111111 x
+b111111111111111111111111111111111111111111111111111111111111111 5"
+b111111111111111111111111111111111111111111111111111111111111111 K"
+b111111111111111111111111111111111111111111111111111111111111111 M"
+b111111111111111111111111111111111111111111111111111111111111111 C
+b111111111111111111111111111111111111111111111111111111111111111 w
+b111111111111111111111111111111111111111111111111111111111111111 L"
+b1111111111111111111111111111111111111111111111111111111100000000 >
+b1111111111111111111111111111111111111111111111111111111 G"
+b1111111111111111111111111111111111111111111111111111111111111 "
+b1111111111111111111111111111111111111111111111111111111111111 Y
+b1111111111111111111111111111111111111111111111111111111111111 ]
+b1111111111111111111111111111111111111111111111111111111111111 -"
+b1111111111111111111111111111111111111111111111111111111111111 !
+b1111111111111111111111111111111111111111111111111111111111111 /"
+b1111111111111111111111111111111111111111111111111111111111111 2"
+b1111111111111111111111111111111111111111111111111111111111111 `"
+b111111111111111111111111111111111111111111111111111111111111111 -
+b111111111111111111111111111111111111111111111111111111111111111 ;
+b111111111111111111111111111111111111111111111111111111111111111 =
+b111111111111111111111111111111111111111111111111111111111111111 a
+b111111111111111111111111111111111111111111111111111111111111111 o
+b111111111111111111111111111111111111111111111111111111111111111 q
+b111111111111111111111111111111111111111111111111111111111111111 6"
+b111111111111111111111111111111111111111111111111111111111111111 D"
+b111111111111111111111111111111111111111111111111111111111111111 F"
+b1111111111111111111111111111111111111111111111111111111111111 ."
+b1111111111111111111111111111111111111111111111111111111111111 a"
+b111111111111111111111111111111111111111111111111111111111111111 <
+b111111111111111111111111111111111111111111111111111111111111111 p
+b111111111111111111111111111111111111111111111111111111111111111 E"
+b111111111111111111111111111111111111111111111111111111111111111 +
+b111111111111111111111111111111111111111111111111111111111111111 I
+b111111111111111111111111111111111111111111111111111111111111111 K
+b1111111111111111111111111111111111111111111111111111111111111 U"
+b111111111111111111111111111111111111111111111111111111111111 \"
+b1111111111111111111111111111111111111111111111110000000000000000 7
+b11111111111111111111111111111111111111111111111 @"
+b111111111111111111111111111111111111111111111111111111111111111 _
+b111111111111111111111111111111111111111111111111111111111111111 }
+b111111111111111111111111111111111111111111111111111111111111111 !"
+b1111111111111111111111111111111111111111111111111111111111111 ^
+b1111111111111111111111111111111111111111111111111111111111111 &"
+b1111111111111111111111111111111111111111111111111111111111111 ("
+b111111111111111111111111111111111111111111111111111111111111111 4"
+b111111111111111111111111111111111111111111111111111111111111111 R"
+b111111111111111111111111111111111111111111111111111111111111111 T"
+b1111111111111111111111111111111111111111111111111111111111111 3"
+b1111111111111111111111111111111111111111111111111111111111111 Y"
+b1111111111111111111111111111111111111111111111111111111111111 ["
+b111111111111111111111111111111111111111111111111111111111111111 .
+b111111111111111111111111111111111111111111111111111111111111111 4
+b111111111111111111111111111111111111111111111111111111111111111 6
+b111111111111111111111111111111111111111111111111111111111111111 b
+b111111111111111111111111111111111111111111111111111111111111111 h
+b111111111111111111111111111111111111111111111111111111111111111 j
+b111111111111111111111111111111111111111111111111111111111111111 7"
+b111111111111111111111111111111111111111111111111111111111111111 ="
+b111111111111111111111111111111111111111111111111111111111111111 ?"
+b111111111111111111111111111111111111111111111111111111111111111 J
+b111111111111111111111111111111111111111111111111111111111111111 ~
+b0 '"
+b111111111111111111111111111111111111111111111111111111111111111 S"
+b0 Z"
+1F
+0M
+1z
+b0 |
+0#"
+b1111111111111111111111111111111111111111111111111111111111111 %"
+1O"
+b0 Q"
+0V"
+b1111111111111111111111111111111111111111111111111111111111111 X"
+b111111111111111111111111111111111111111111111111111111111111111 5
+b111111111111111111111111111111111111111111111111111111111111111 i
+b111111111111111111111111111111111111111111111111111111111111111 >"
+0G
+1N
+0{
+1$"
+0P"
+1W"
+b1111111111111111111111111111111100000000000000000000000000000000 0
+b11111111111111111111111111111111111111111111111 k
+b1111111111111111111111111111111111111111111111111111111 r
+b11111111111111111111111111111111111111111111111111111111111 y
+b1111111111111111111111111111111111111111111111111111111111111 ""
+b111111111111111111111111111111111111111111111111111111111111 )"
+0\
+b1111111111111111111111111111111 d
+b1111111111111111111111111111111 9"
+b10 %
+b10 (
+b10 [
+b10 1"
+b111111111111111111111111111111111111111111111111111111111111111 $
+b111111111111111111111111111111111111111111111111111111111111111 '
+b111111111111111111111111111111111111111111111111111111111111111 /
+b111111111111111111111111111111111111111111111111111111111111111 Z
+b111111111111111111111111111111111111111111111111111111111111111 c
+b111111111111111111111111111111111111111111111111111111111111111 0"
+b111111111111111111111111111111111111111111111111111111111111111 8"
+#60
+b101010101010101010101010101010101010101010101010101010101010000 S
+b1010101010101010101010101010101010101010101010101010101010101 \"
+b1010101010101010101010101010101010101010101010101010101010101000 *
+b1010101010101010101010101010101010101010101010101010101010101000 P
+b1010101010101010101010101010101010101010101010101010101010101000 R
+b10101010101010101010101010101010101010101010101010101010101010 3"
+b10101010101010101010101010101010101010101010101010101010101010 Y"
+b10101010101010101010101010101010101010101010101010101010101010 ["
+b1010101010101010101010101010101010101010101010101010101010101000 O
+b10101010101010101010101010101010101010101010101010101010101010 X"
+b1010101010101010101010101010101010101010101010101010101010101000 L
+b10101010101010101010101010101010101010101010101010101010101010 U"
+b1010101010101010101010101010101010101010101010101010101010101010 +
+b1010101010101010101010101010101010101010101010101010101010101010 I
+b1010101010101010101010101010101010101010101010101010101010101010 K
+b1010101010101010101010101010101010101010101010101010101010101010 _
+b1010101010101010101010101010101010101010101010101010101010101010 }
+b1010101010101010101010101010101010101010101010101010101010101010 !"
+b1010101010101010101010101010101010101010101010101010101010101010 4"
+b1010101010101010101010101010101010101010101010101010101010101010 R"
+b1010101010101010101010101010101010101010101010101010101010101010 T"
+b1010101010101010101010101010101010101010101010101010101010101010 J
+b1010101010101010101010101010101010101010101010101010101010101010 ~
+b1010101010101010101010101010101010101010101010101010101010101010 S"
+b1010101010101010101010101010101010101010101010101010101010100000 E
+b101010101010101010101010101010101010101010101010101010101010 N"
+b1010101010101010101010101010101010101010101010101010101010101010 ,
+b1010101010101010101010101010101010101010101010101010101010101010 B
+b1010101010101010101010101010101010101010101010101010101010101010 D
+b1010101010101010101010101010101010101010101010101010101010101010 `
+b1010101010101010101010101010101010101010101010101010101010101010 v
+b1010101010101010101010101010101010101010101010101010101010101010 x
+b1010101010101010101010101010101010101010101010101010101010101010 5"
+b1010101010101010101010101010101010101010101010101010101010101010 K"
+b1010101010101010101010101010101010101010101010101010101010101010 M"
+b1010101010101010101010101010101010101010101010101010101010101010 C
+b1010101010101010101010101010101010101010101010101010101010101010 w
+b1010101010101010101010101010101010101010101010101010101010101010 L"
+b1010101010101010101010101010101010101010101010101010101000000000 >
+b10101010101010101010101010101010101010101010101010101010 G"
+b1010101010101010101010101010101010101010101010101010101010101010 -
+b1010101010101010101010101010101010101010101010101010101010101010 ;
+b1010101010101010101010101010101010101010101010101010101010101010 =
+b1010101010101010101010101010101010101010101010101010101010101010 a
+b1010101010101010101010101010101010101010101010101010101010101010 o
+b1010101010101010101010101010101010101010101010101010101010101010 q
+b1010101010101010101010101010101010101010101010101010101010101010 6"
+b1010101010101010101010101010101010101010101010101010101010101010 D"
+b1010101010101010101010101010101010101010101010101010101010101010 F"
+b1010101010101010101010101010101010101010101010101010101010101010 <
+b1010101010101010101010101010101010101010101010101010101010101010 p
+b1010101010101010101010101010101010101010101010101010101010101010 E"
+b101010101010101010101010101010101010101010101010101010101010000 #
+b101010101010101010101010101010101010101010101010101010101010000 &
+b101010101010101010101010101010101010101010101010101010101010000 )
+b101010101010101010101010101010101010101010101010101010101010000 W
+b1010101010101010101010101010101010101010101010101010101010101 !
+b1010101010101010101010101010101010101010101010101010101010101 /"
+b1010101010101010101010101010101010101010101010101010101010101 2"
+b1010101010101010101010101010101010101010101010101010101010101 `"
+b1010101010101010101010101010101010101010101010100000000000000000 7
+b1110101010101010101010101010101010101010101010101010101010101010 ^
+b1110101010101010101010101010101010101010101010101010101010101010 &"
+b1110101010101010101010101010101010101010101010101010101010101010 ("
+b101010101010101010101010101010101010101010101010 @"
+b1111010101010101010101010101010101010101010101010101010101010101 "
+b1111010101010101010101010101010101010101010101010101010101010101 Y
+b1111010101010101010101010101010101010101010101010101010101010101 ]
+b1111010101010101010101010101010101010101010101010101010101010101 -"
+b1010101010101010101010101010101010101010101010101010101010101010 .
+b1010101010101010101010101010101010101010101010101010101010101010 4
+b1010101010101010101010101010101010101010101010101010101010101010 6
+b1010101010101010101010101010101010101010101010101010101010101010 b
+b1010101010101010101010101010101010101010101010101010101010101010 h
+b1010101010101010101010101010101010101010101010101010101010101010 j
+b1010101010101010101010101010101010101010101010101010101010101010 7"
+b1010101010101010101010101010101010101010101010101010101010101010 ="
+b1010101010101010101010101010101010101010101010101010101010101010 ?"
+b0 X
+b0 ."
+b0 a"
+b1110101010101010101010101010101010101010101010101010101010101010 %"
+0T
+b101010101010101010101010101010101010101010101010101010101010000 V
+0*"
+b1111010101010101010101010101010101010101010101010101010101010101 ,"
+0]"
+b1010101010101010101010101010101010101010101010101010101010101 _"
+b1010101010101010101010101010101010101010101010101010101010101010 5
+b1010101010101010101010101010101010101010101010101010101010101010 i
+b1010101010101010101010101010101010101010101010101010101010101010 >"
+1U
+1+"
+1^"
+b1010101010101010101010101010101000000000000000000000000000000000 0
+b1111111111111111101010101010101010101010101010101010101010101010 k
+b1111111110101010101010101010101010101010101010101010101010101010 r
+b1111101010101010101010101010101010101010101010101010101010101010 y
+b1110101010101010101010101010101010101010101010101010101010101010 ""
+b1111010101010101010101010101010101010101010101010101010101010101 )"
+1\
+b1111111111111111111111111111111110101010101010101010101010101010 d
+b10101010101010101010101010101010 9"
+b11 %
+b11 (
+b11 [
+b11 1"
+b1010101010101010101010101010101010101010101010101010101010101010 $
+b1010101010101010101010101010101010101010101010101010101010101010 '
+b1010101010101010101010101010101010101010101010101010101010101010 /
+b1010101010101010101010101010101010101010101010101010101010101010 Z
+b1010101010101010101010101010101010101010101010101010101010101010 c
+b1010101010101010101010101010101010101010101010101010101010101010 0"
+b1010101010101010101010101010101010101010101010101010101010101010 8"
+#70
+b1111111100000000 >
+b0 G"
+b11111111 -
+b11111111 ;
+b11111111 =
+b11111111 a
+b11111111 o
+b11111111 q
+b11111111 6"
+b11111111 D"
+b11111111 F"
+b11111111000000000000 E
+b1111111100000000000000 L
+b0 N"
+b0 U"
+b11111111 <
+b11111111 p
+b11111111 E"
+b1111111100000000 ,
+b1111111100000000 B
+b1111111100000000 D
+b11111111000000000000 +
+b11111111000000000000 I
+b11111111000000000000 K
+b111111110000000000000 S
+b0 `
+b0 v
+b0 x
+b0 _
+b0 }
+b0 !"
+b0 5"
+b0 K"
+b0 M"
+b0 4"
+b0 R"
+b0 T"
+b0 \"
+b111111110000000000000000 7
+b0 @"
+b11111111000000000000 *
+b11111111000000000000 P
+b11111111000000000000 R
+b11111111000000000000 #
+b11111111000000000000 &
+b11111111000000000000 )
+b11111111000000000000 W
+b0 ^
+b0 &"
+b0 ("
+b0 "
+b0 Y
+b0 ]
+b0 -"
+b0 3"
+b0 Y"
+b0 ["
+b0 !
+b0 /"
+b0 2"
+b0 `"
+b11111111 .
+b11111111 4
+b11111111 6
+b11111111 b
+b11111111 h
+b11111111 j
+b11111111 7"
+b11111111 ="
+b11111111 ?"
+b0 C
+b0 J
+b11111111000000000000 Q
+b11111111000000000000 X
+b0 w
+b0 ~
+b0 '"
+b0 ."
+b0 L"
+b0 S"
+b0 Z"
+b0 a"
+0?
+b1111111100000000 A
+0F
+b11111111000000000000 H
+1M
+b0 O
+1T
+b0 V
+0s
+b0 u
+0z
+b0 |
+1#"
+b0 %"
+1*"
+b0 ,"
+0H"
+b0 J"
+0O"
+b0 Q"
+1V"
+b0 X"
+1]"
+b0 _"
+b11111111 5
+b11111111 i
+b11111111 >"
+1@
+1G
+0N
+0U
+1t
+1{
+0$"
+0+"
+1I"
+1P"
+0W"
+0^"
+b1111111100000000000000000000000000000000 0
+b0 k
+b0 r
+b0 y
+b0 ""
+b0 )"
+0\
+b0 d
+b0 9"
+b1100 %
+b1100 (
+b1100 [
+b1100 1"
+b11111111 $
+b11111111 '
+b11111111 /
+b11111111 Z
+b11111111 c
+b11111111 0"
+b11111111 8"
+#80
+b1000000000000000000000000000000000000000000000000 !
+b1000000000000000000000000000000000000000000000000 /"
+b1000000000000000000000000000000000000000000000000 2"
+b1000000000000000000000000000000000000000000000000 `"
+b1000000000000000000000000000000000000000000000000 _"
+b1000000000000000000000000000000000000000000000000 \"
+b10000000000000000000000000000000000000000000000000 3"
+b10000000000000000000000000000000000000000000000000 Y"
+b10000000000000000000000000000000000000000000000000 ["
+b10000000000000000000000000000000000000000000000000 X"
+b0 L
+b10000000000000000000000000000000000000000000000000 U"
+b0 +
+b0 I
+b0 K
+b1000000000000000000000000000000000000000000000000000 4"
+b1000000000000000000000000000000000000000000000000000 R"
+b1000000000000000000000000000000000000000000000000000 T"
+b0 H
+b1000000000000000000000000000000000000000000000000000 Q"
+b0 E
+b1000000000000000000000000000000000000000000000000000 N"
+b0 ,
+b0 B
+b0 D
+b10000000000000000000000000000000000000000000000000000000 5"
+b10000000000000000000000000000000000000000000000000000000 K"
+b10000000000000000000000000000000000000000000000000000000 M"
+b0 A
+b10000000000000000000000000000000000000000000000000000000 J"
+b0 >
+b10000000000000000000000000000000000000000000000000000000 G"
+b1000000000000000000000000000000000000000000000000000000000000000 -
+b1000000000000000000000000000000000000000000000000000000000000000 ;
+b1000000000000000000000000000000000000000000000000000000000000000 =
+b1000000000000000000000000000000000000000000000000000000000000000 a
+b1000000000000000000000000000000000000000000000000000000000000000 o
+b1000000000000000000000000000000000000000000000000000000000000000 q
+b1000000000000000000000000000000000000000000000000000000000000000 6"
+b1000000000000000000000000000000000000000000000000000000000000000 D"
+b1000000000000000000000000000000000000000000000000000000000000000 F"
+b1000000000000000000000000000000000000000000000000000000000000000 <
+b1000000000000000000000000000000000000000000000000000000000000000 p
+b1000000000000000000000000000000000000000000000000000000000000000 E"
+b0 S
+b0 7
+b1111111110000000000000000000000000000000000000000000000000000000 `
+b1111111110000000000000000000000000000000000000000000000000000000 v
+b1111111110000000000000000000000000000000000000000000000000000000 x
+b1111111111111000000000000000000000000000000000000000000000000000 _
+b1111111111111000000000000000000000000000000000000000000000000000 }
+b1111111111111000000000000000000000000000000000000000000000000000 !"
+b100000000000000000000000000000000000000000000000 @"
+b0 *
+b0 P
+b0 R
+b0 #
+b0 &
+b0 )
+b0 W
+b1111111111111110000000000000000000000000000000000000000000000000 ^
+b1111111111111110000000000000000000000000000000000000000000000000 &"
+b1111111111111110000000000000000000000000000000000000000000000000 ("
+b1111111111111111000000000000000000000000000000000000000000000000 "
+b1111111111111111000000000000000000000000000000000000000000000000 Y
+b1111111111111111000000000000000000000000000000000000000000000000 ]
+b1111111111111111000000000000000000000000000000000000000000000000 -"
+b1000000000000000000000000000000000000000000000000000000000000000 .
+b1000000000000000000000000000000000000000000000000000000000000000 4
+b1000000000000000000000000000000000000000000000000000000000000000 6
+b1000000000000000000000000000000000000000000000000000000000000000 b
+b1000000000000000000000000000000000000000000000000000000000000000 h
+b1000000000000000000000000000000000000000000000000000000000000000 j
+b1000000000000000000000000000000000000000000000000000000000000000 7"
+b1000000000000000000000000000000000000000000000000000000000000000 ="
+b1000000000000000000000000000000000000000000000000000000000000000 ?"
+b0 Q
+b0 X
+b1111111110000000000000000000000000000000000000000000000000000000 u
+b1111111111111000000000000000000000000000000000000000000000000000 |
+0M
+b0 O
+0T
+b0 V
+0#"
+b1111111111111110000000000000000000000000000000000000000000000000 %"
+0*"
+b1111111111111111000000000000000000000000000000000000000000000000 ,"
+0V"
+0]"
+b1000000000000000000000000000000000000000000000000000000000000000 5
+b1000000000000000000000000000000000000000000000000000000000000000 i
+b1000000000000000000000000000000000000000000000000000000000000000 >"
+1N
+1U
+1$"
+1+"
+1W"
+1^"
+b0 0
+b1111111111111111100000000000000000000000000000000000000000000000 k
+b1111111110000000000000000000000000000000000000000000000000000000 r
+b1111111111111000000000000000000000000000000000000000000000000000 y
+b1111111111111110000000000000000000000000000000000000000000000000 ""
+b1111111111111111000000000000000000000000000000000000000000000000 )"
+1\
+b1111111111111111111111111111111110000000000000000000000000000000 d
+b10000000000000000000000000000000 9"
+b1111 %
+b1111 (
+b1111 [
+b1111 1"
+b1000000000000000000000000000000000000000000000000000000000000000 $
+b1000000000000000000000000000000000000000000000000000000000000000 '
+b1000000000000000000000000000000000000000000000000000000000000000 /
+b1000000000000000000000000000000000000000000000000000000000000000 Z
+b1000000000000000000000000000000000000000000000000000000000000000 c
+b1000000000000000000000000000000000000000000000000000000000000000 0"
+b1000000000000000000000000000000000000000000000000000000000000000 8"
+#90
