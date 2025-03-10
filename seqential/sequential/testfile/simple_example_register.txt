@@ -1,0 +1,19 @@
+  clk = 1'b0;
+        instr_count = 0; 
+
+        // Initialize registers manually
+        uut.register_file[0] = 64'h0000;
+        uut.register_file[1] = 64'h0001;
+        uut.register_file[2] = 64'h0010;
+        uut.register_file[3] = 64'h0010;
+        uut.register_file[4] = 64'h0010;
+        //uut.register_file[5] = 64'h0000;
+       // uut.register_file[6] = 64'h0001;
+        // uut.register_file[3] = 64'h0009;
+        // uut.register_file[15] = 64'h0000;
+        // uut.register_file[16] = 64'h0001;
+        // uut.register_file[14] = 64'h0002;
+        uut.pc = 32'h0000;
+
+        // Wait for a few clock cycles to observe operations
+        #10; // Ensure initial values are set before first display

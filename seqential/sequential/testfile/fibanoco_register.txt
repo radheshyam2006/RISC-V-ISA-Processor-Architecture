@@ -1,0 +1,20 @@
+initial begin
+        clk = 1'b0;
+        instr_count = 0; 
+
+        // Initialize registers manually
+        uut.register_file[0] = 32'd0; // x0 = 0
+        uut.register_file[10] = 32'd2; // x10 = 2
+        uut.register_file[15] = 32'd0; // x14 = 0
+        uut.pc = 32'h0000;
+
+        // Wait for a few clock cycles to observe operations
+        #10; // Ensure initial values are set before first display
+    end
+
+    // Display values only on the positive edge of clk
+    always @(posedge clk) begin
+        $display("Register x3 (a): %d | x4 (b): %d |x30 (n) : %d|PC: %d,x10=%d|x7(temp=ans+a)=%d", 
+                 uut.register_file[3], uut.register_file[4],uut.register_file[30],uut.pc/4,uut.register_file[10],uut.register_file[7]);
+        $display("----------------------------------------------------------------------------------------------------------------------------------");
+    end
