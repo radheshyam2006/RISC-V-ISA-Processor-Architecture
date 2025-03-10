@@ -1,0 +1,8 @@
+       // Initialize registers manually
+        uut.register_file[0] = 64'd0000;
+       // uut.register_file[1] = 64'h0001;
+        uut.register_file[2] = 64'd6;
+        // uut.register_file[3] = 64'd14;
+        // uut.register_file[4] = 64'd0;
+      //  uut.register_file[6] = 64'd4;
+       // uut.register_file[7] = 64'd9;

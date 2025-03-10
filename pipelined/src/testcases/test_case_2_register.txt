@@ -1,0 +1,3 @@
+      uut.register_file[0] = 64'd0000;
+       // uut.register_file[1] = 64'h0001;
+        uut.register_file[2] = 64'd6;
